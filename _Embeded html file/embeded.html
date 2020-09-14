@@ -1,0 +1,269 @@
+<html>
+<head><meta charset="utf-8" /></head>
+<h1>All the graphs embedded</h1>
+This file contains all the generated graphs in the html format.
+<br>
+Separate codes or generated codes are saved in their corresponding .js file.
+<br>
+This file has been created to indicate that all the files created with defferent libraries
+ (both in Python and JavaScript) can then be added into any html file.
+Therefore different libraries could independently generate visualizations and get integrated.
+<br>
+There are five different line charts created in this file:
+<br>
+1. Python library <a href="https://plotly.com/">Plotly</a> 
+<br>
+2. Python library <a href="https://bokeh.org/">Bokeh</a>
+<br>
+3. Python library <a href="https://altair-viz.github.io/">Altair</a>
+<br>
+4. JavaScript library <a href="https://www.chartjs.org/">Chart.js</a>
+<br>
+5. JavaScript library <a href="https://d3js.org/">D3.js</a>
+<br>
+
+<br>
+
+<br>
+<body>
+
+  <h2>1 - Plotly</h2>
+  
+  
+  <br>
+  In this library data was generated with the given formula(which could be easily replaced). 
+  Then by using the express function of the Plotly library the graph was created. 
+  some attributes, properties and interactive functions were added.
+  Finally the graph was saved as an html file.
+
+  <br>
+  python code and the generated html code can be found in the <a href="../PlotlyFunctionHTML">PlotlyFunctionHTML</a> directory.
+  <br>
+  main.py is the python file creating the graph and to see the graph one can simply open lineChart.html file in a browser.
+  <br>
+  simple.py and simpleLineChart.html are just a simple form of lineChart without any properties.
+
+
+    <div>
+        
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+<script type="text/javascript" src='plotlyScript1.js'>/**
+* plotly.js v1.54.6
+* Copyright 2012-2020, Plotly, Inc.
+* All rights reserved.
+* Licensed under the MIT license
+*/
+</script>  
+    <div id="b3fb5cd9-cb45-4f64-bec0-3406585b68f8" class="plotly-graph-div" style="height:700px; width:1400px;"></div>
+    <script type="text/javascript">
+        
+            window.PLOTLYENV=window.PLOTLYENV || {};
+            
+        if (document.getElementById("b3fb5cd9-cb45-4f64-bec0-3406585b68f8")) {
+            Plotly.newPlot(
+                'b3fb5cd9-cb45-4f64-bec0-3406585b68f8',
+                [{"hovertext": ["x: -2<br>y = 2 * (-2) + 1 = -3", "x: -1<br>y = 2 * (-1) + 1 = -1", "x: 0<br>y = 2 * (0) + 1 = 1", "x: 1<br>y = 2 * (1) + 1 = 3", "x: 2<br>y = 2 * (2) + 1 = 5"], "legendgroup": "line", "line": {"color": "#19d3f3", "dash": "solid"}, "marker": {"line": {"color": "DarkSlateGrey", "width": 2}, "size": 20}, "mode": "markers+lines", "name": "line", "orientation": "v", "showlegend": true, "type": "scatter", "x": [-2, -1, 0, 1, 2], "xaxis": "x", "y": [-3, -1, 1, 3, 5], "yaxis": "y"}],
+                {"autosize": false, "height": 700, "hoverlabel": {"bgcolor": "white", "font": {"family": "Rockwell", "size": 16}}, "legend": {"title": {"text": "color"}, "tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "A line chart for a simple function in Plotly", "x": 0.5, "xanchor": "center", "y": 0.92, "yanchor": "top"}, "width": 1400, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "x"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "y = 2*(x) + 1"}}},
+                {"responsive": true}
+            )
+        };
+        
+    </script>
+</div>
+
+</body>
+
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>All plots</title>
+
+      <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.1.min.js" integrity="sha384-qkRvDQVAIfzsJo40iRBbxt6sttt0hv4lh74DG7OK4MCHv4C5oohXYoHUM5W11uqS" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+          Bokeh.set_log_level("info");
+      </script>
+      
+    
+    
+  
+</head>
+
+
+<body>
+  
+  <br>
+
+  <br>
+    
+  <h2>2 - Bokeh</h2>
+  
+  <br>
+  In this library data was generated with the given formula (same as part 1). 
+  Then by using the figure function of the Bokeh library the graph was created. 
+  some attributes, properties and interactive functions were added.
+  Finally the graph was saved as an html file.
+
+  <br>
+  python code and the generated html code can be found in the <a href="../Bokeh/">Bokeh</a> directory.
+  <br>
+  main.py is the python file creating the graph and to see the graph one can simply open main.html file in a browser.
+  <br>
+    
+  <br>
+        
+          
+  <div class="bk-root" id="9faffeee-b6b4-419a-94cd-cd080c202537" data-root-id="1001"></div>
+        
+      
+    
+  
+  
+    <script type="application/json" id="1164">
+      {"f9f4689e-cdb4-43e5-a3d2-4e9d3f074e03":{"roots":{"references":[{"attributes":{"data_source":{"id":"1059"},"glyph":{"id":"1060"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1061"},"selection_glyph":null,"view":{"id":"1063"}},"id":"1062","type":"GlyphRenderer"},{"attributes":{"range_padding":0.5},"id":"1006","type":"DataRange1d"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"axis_label":"x","axis_label_text_font_size":"16pt","formatter":{"id":"1051"},"ticker":{"id":"1013"}},"id":"1012","type":"LinearAxis"},{"attributes":{"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"1045","type":"Line"},{"attributes":{"source":{"id":"1059"}},"id":"1063","type":"CDSView"},{"attributes":{},"id":"1013","type":"BasicTicker"},{"attributes":{"axis":{"id":"1012"},"ticker":null},"id":"1015","type":"Grid"},{"attributes":{"source":{"id":"1044"}},"id":"1048","type":"CDSView"},{"attributes":{"label":{"value":"the legend"},"renderers":[{"id":"1047"}]},"id":"1058","type":"LegendItem"},{"attributes":{"axis_label":"y = 2*(x) + 1","axis_label_text_font_size":"16pt","formatter":{"id":"1052"},"ticker":{"id":"1041"}},"id":"1042","type":"LinearAxis"},{"attributes":{"interval":1,"num_minor_ticks":7},"id":"1041","type":"SingleIntervalTicker"},{"attributes":{"align":"center","text":"A line chart for a simple function in Bokeh","text_font_size":{"value":"22pt"}},"id":"1002","type":"Title"},{"attributes":{},"id":"1016","type":"PanTool"},{"attributes":{"range_padding":0.5},"id":"1004","type":"DataRange1d"},{"attributes":{},"id":"1018","type":"ZoomInTool"},{"attributes":{},"id":"1070","type":"UnionRenderers"},{"attributes":{},"id":"1019","type":"ZoomOutTool"},{"attributes":{},"id":"1071","type":"Selection"},{"attributes":{},"id":"1021","type":"ResetTool"},{"attributes":{"items":[{"id":"1058"}]},"id":"1057","type":"Legend"},{"attributes":{},"id":"1020","type":"SaveTool"},{"attributes":{},"id":"1025","type":"RedoTool"},{"attributes":{"overlay":{"id":"1028"}},"id":"1022","type":"PolySelectTool"},{"attributes":{"callback":null},"id":"1023","type":"TapTool"},{"attributes":{},"id":"1024","type":"UndoTool"},{"attributes":{"callback":null,"tooltips":[["index","$index"],["(x,y)","($x, $y)"],["point_x","@x"],["point_y","2 * (@x) + 1 = @y"]]},"id":"1026","type":"HoverTool"},{"attributes":{"data":{"x":[-2,-1,0,1,2],"y":[-3,-1,1,3,5]},"selected":{"id":"1071"},"selection_policy":{"id":"1070"}},"id":"1059","type":"ColumnDataSource"},{"attributes":{"fill_alpha":0.5,"fill_color":"lightgrey","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"xs_units":"screen","ys_units":"screen"},"id":"1028","type":"PolyAnnotation"},{"attributes":{},"id":"1053","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"navy"},"line_alpha":{"value":0.1},"line_color":{"value":"navy"},"size":{"units":"screen","value":20},"x":{"field":"x"},"y":{"field":"y"}},"id":"1061","type":"Circle"},{"attributes":{},"id":"1054","type":"Selection"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1027","type":"BoxAnnotation"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"1046","type":"Line"},{"attributes":{"below":[{"id":"1012"}],"center":[{"id":"1015"},{"id":"1057"}],"left":[{"id":"1042"}],"plot_width":900,"renderers":[{"id":"1047"},{"id":"1062"}],"title":{"id":"1002"},"toolbar":{"id":"1029"},"x_range":{"id":"1004"},"x_scale":{"id":"1008"},"y_range":{"id":"1006"},"y_scale":{"id":"1010"}},"id":"1001","subtype":"Figure","type":"Plot"},{"attributes":{"data":{"x":[-2,-1,0,1,2],"y":[-3,-1,1,3,5]},"selected":{"id":"1054"},"selection_policy":{"id":"1053"}},"id":"1044","type":"ColumnDataSource"},{"attributes":{},"id":"1052","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"1027"}},"id":"1017","type":"BoxSelectTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1016"},{"id":"1017"},{"id":"1018"},{"id":"1019"},{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"},{"id":"1024"},{"id":"1025"},{"id":"1026"}]},"id":"1029","type":"Toolbar"},{"attributes":{"data_source":{"id":"1044"},"glyph":{"id":"1045"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1046"},"selection_glyph":null,"view":{"id":"1048"}},"id":"1047","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"navy"},"line_alpha":{"value":0.5},"line_color":{"value":"navy"},"size":{"units":"screen","value":20},"x":{"field":"x"},"y":{"field":"y"}},"id":"1060","type":"Circle"},{"attributes":{},"id":"1051","type":"BasicTickFormatter"}],"root_ids":["1001"]},"title":"Bokeh Application","version":"2.2.1"}}
+    </script>
+    <script type="text/javascript" src="bokehScript.js">
+      
+    </script>
+  
+</body>
+
+<style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+
+
+
+<br>
+
+<br>
+  
+<h2>3 - Altair</h2>
+
+<br>
+In this library data was generated with the given formula (same as part 1 and part 2). 
+Then by using the figure function of the Altair library the graph was created. 
+some attributes, properties and interactive functions were added.
+Finally the graph was saved as an html file.
+
+<br>
+python code and the generated html code can be found in the <a href="../AltairFunctionHTML/">Altair</a> directory.
+<br>
+main.py is the python file creating the graph and to see the graph one can simply open lineChart.html file in a browser.
+<br>
+  
+<br>
+  <div id="vis"></div>
+  <script src="altairScript.js">
+    
+
+  </script>
+</body>
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Line Chart with Chart.js </title>
+</head>
+<body>
+
+
+
+<br>
+
+<br>
+  
+<h2>4 - Chart.js</h2>
+
+<br>
+In this library data was generated with the given formula(which could be easily replaced) in an html file.
+After adding the proper source for the script the graph was created with available functions(in this case chart).
+some attributes, properties and interactive functions were added.
+
+<br>
+python code and the generated html code can be found in the <a href="../ChartJS/">Chart.js</a> directory.
+<br>
+In order to see the graph one can simply open index.html file in a browser.
+<br>
+  
+<br>
+
+  <div class="container">
+  <canvas id="lineChart_1" width="300" height="150"></canvas>
+
+  <script src='chartScript.js'>
+    
+
+  </script>
+  </div>
+</body>
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+<body>
+
+
+
+  
+
+
+  <br>
+
+  <br>
+    
+  <h2>5 - D3.js</h2>
+
+  <br>
+  In this library data was generated with the given formula(which could be easily replaced) in an html file.
+  After adding the proper source for the script the graph was created with available functions.
+  some attributes, properties and interactive functions were added.
+
+  <br>
+  python code and the generated html code can be found in the <a href="../D3JS/">D3.js</a> directory.
+  <br>
+  In order to see the graph one can simply open index.html file in a browser.
+  This visualization is loading the data from a small .csv file but in the below graph, the data is generated by the code. 
+  <br>
+    
+  <br>
+
+  <div id="my_dataviz"></div>
+
+  <script src="index.js"></script>
+  
+
+
+</body>
+
+
+
+
+
+</html>
